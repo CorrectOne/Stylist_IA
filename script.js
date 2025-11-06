@@ -19,7 +19,7 @@ const CATEGORIES = {
     Peças versáteis que acompanham rotinas ativas e um estilo de vida dinâmico.` 
   },
   "Golden Hour":{ 
-    desc: `Com base nas suas respostas no formulário do Stylist.ai, a categoria que mais combina com você é Golden Hour.
+    desc: `Com base nas suas respostas no formulário do Stylist.ai, a categoria que mais combina com você é Golden Hour.<br><br>
     Um visual leve e natural, com tecidos como linho, viscose e algodão.
     Cores claras e cortes fluídos trazem frescor e leveza, perfeitos para dias ensolarados.` 
   },
