@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Stylist.ai — Teste de Estilo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  
+
+    <div style="
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px; /* aumenta o tamanho vertical da área */
+  font-style: italic; /* deixa o texto itálico */
+">
+  <span style="color:var(--soft-pink);font-weight:700;font-size:28px">Stylist</span>
+  <span style="color:var(--white);opacity:0.92;font-weight:600;font-size:28px">.ai</span>
+</div>
+
+</header>
+
+<main class="container" id="inicio">
+
+  <!-- CARROSSEL -->
+  <div class="carousel" aria-hidden="false">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="image/carrossel4.jpg" alt="Campanha 1">
+      </div>
+      <div class="slide">
+        <img src="image/carrossel3.webp" alt="Campanha 2">
+      </div>
+      <div class="slide">
+        <img src="image/carrosselLudmila.png" alt="Campanha 3">
+      </div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <!-- FORMULARIO E CATEGORIAS -->
+  <div class="flex-row" id="teste">
+    <!-- TESTE DAS !) PERGUNTAS -->
+    <div class="left card">
+      <h2 class="quiz-title">Teste de estilo — 10 perguntas</h2>
+      <p class="lead">Responda rápido para que a Stylist.ai recomende peças do catálogo da Shein compatíveis com seu gosto.</p>
+
+      <form id="quiz" autocomplete="off" onsubmit="return false;">
+  <!-- 1 -->
+  <div class="question" data-q="colors">
+    <label class="q">1. Quais tons dominam seu guarda-roupa?</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">Preto e escuro </div>
+      <div class="opt" data-category="golden">Cores claras e suaves </div>
+      <div class="opt" data-category="flex">Cores vivas e marcantes </div>
+      <div class="opt" data-category="streetwear">Cinza, jeans, branco </div>
+      <div class="opt" data-category="essential">Tons neutros e elegantes </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="question" data-q="style">
+    <label class="q">2. Como você define seu estilo?</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">Intenso </div>
+      <div class="opt" data-category="golden">Leve </div>
+      <div class="opt" data-category="flex">Prático </div>
+      <div class="opt" data-category="streetwear">Urbano </div>
+      <div class="opt" data-category="essential">Refinado </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="question" data-q="fabric">
+    <label class="q">3. Quais tecidos você mais gosta de usar?</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">Couro, renda, veludo </div>
+      <div class="opt" data-category="golden">Algodão, linho, viscose </div>
+      <div class="opt" data-category="flex">Dry fit, moletom leve </div>
+      <div class="opt" data-category="streetwear">Jeans, sarja, tactel </div>
+      <div class="opt" data-category="essential">Alfaiataria, crepe, seda </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="question" data-q="occasion">
+    <label class="q">4. Você busca roupas pra qual tipo de momento?</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">Noite, eventos, festas </div>
+      <div class="opt" data-category="golden">Dia a dia, verão, lazer </div>
+      <div class="opt" data-category="flex">Academia, rotina corrida </div>
+      <div class="opt" data-category="streetwear">Rolês e cidade </div>
+      <div class="opt" data-category="essential">Trabalho e compromissos </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="question" data-q="fit">
+    <label class="q">5. Qual caimento te representa mais?</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">Justo e marcante </div>
+      <div class="opt" data-category="golden">Solto e leve </div>
+      <div class="opt" data-category="flex">Confortável e esportivo </div>
+      <div class="opt" data-category="streetwear">Larguinho e urbano </div>
+      <div class="opt" data-category="essential">Estruturado e alinhado </div>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="question" data-q="details">
+    <label class="q">6. Você prefere roupas com…</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">Detalhes, texturas ou transparência </div>
+      <div class="opt" data-category="golden">Estampas suaves e florais </div>
+      <div class="opt" data-category="flex">Tecidos funcionais e leves </div>
+      <div class="opt" data-category="streetwear">Sobreposições e cortes modernos </div>
+      <div class="opt" data-category="essential">Modelagem limpa e minimalista </div>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="question" data-q="phrase">
+    <label class="q">7. Qual dessas frases combina mais com você?</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">“Escuro é o novo básico.” </div>
+      <div class="opt" data-category="golden">“Quanto mais leve, melhor.” </div>
+      <div class="opt" data-category="flex">“Conforto é tudo.” </div>
+      <div class="opt" data-category="streetwear">“Prefiro as peças com atitude.” </div>
+      <div class="opt" data-category="essential">“Menos, mas com classe.” </div>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="question" data-q="shoes">
+    <label class="q">8. Nos pés, você vive de…</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">Coturno ou bota </div>
+      <div class="opt" data-category="golden">Sandália ou rasteira </div>
+      <div class="opt" data-category="flex">Tênis esportivo </div>
+      <div class="opt" data-category="streetwear">Tênis casual </div>
+      <div class="opt" data-category="essential">Mocassim ou salto </div>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="question" data-q="inspiration">
+    <label class="q">9. Quem mais inspira seus looks?</label>
+    <div class="options">
+      <div class="opt" data-category="darkcore">Estéticas sombrias e alternativas </div>
+      <div class="opt" data-category="golden">Moda leve e natural </div>
+      <div class="opt" data-category="flex">Esporte e movimento </div>
+      <div class="opt" data-category="streetwear">Cultura urbana e pop </div>
+      <div class="opt" data-category="essential">Clássicos e elegância moderna </div>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="question" data-q="sustent">
+    <label class="q">10. Sustentabilidade influencia suas escolhas?</label>
+    <div class="options">
+      <div class="opt" data-category="golden">Sempre </div>
+      <div class="opt" data-category="essential">Às vezes </div>
+      <div class="opt" data-category="streetwear darkcore">Não muito</div>
+    </div>
+  </div>
+
+  <!-- Ações -->
+  <div class="actions">
+    <button class="btn btn-primary" id="btn-submit" type="button">Finalizar Formulário</button>
+    <button class="btn btn-secondary" id="btn-reset" type="button">Limpar Respostas</button>
+  </div>
+</form>
+
+    </div>
+
+    <!-- PAINEL DIREITO (CATEGORIAS + PRODUTOS) -->
+    <aside class="right">
+      <div class="category-panel card" id="catalogo">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <strong style="font-size:16px;color:var(--graphite)">Categorias</strong>
+          <small style="font-size:12px;color:#666">Toque para alternar</small>
+        </div>
+
+        <!-- botões de categoria -->
+        <div class="cat-buttons" id="cat-buttons"></div>
+
+        <div class="cat-desc" id="cat-desc">
+          <em>Responda o teste para ver uma categoria recomendada.</em>
+        </div>
+
+        <!-- Produtos (lista vertical) -->
+        <div class="products" id="products"></div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div style="max-width:1150px;margin:0 auto;padding:6px 10px;color:rgba(255,255,255,0.95)">
+     <span id="year"></span> Stylist.ai <p>
+      <p> Projeto de Extensão - 2º Semestre</p>
+      Ingrid Valença -
+      Carlindo Soares -
+      Millena Alves  -
+      Beatriz Rodrigues -
+      Gabriel Chagas -
+      Aline Soares -
+      Gabriel Melo -
+      Maria Eduarda Macedo -
+      Tainá Maria -
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
